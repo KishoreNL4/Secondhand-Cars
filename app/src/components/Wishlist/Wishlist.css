@@ -1,0 +1,88 @@
+.Wishlist {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+}
+
+.Wishlist1 {
+  width: 400px;
+
+  height: 530px;
+  /* box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15); */
+  border-radius: 8px;
+  margin-top: -100px;
+  z-index: 10;
+  /* margin: auto; */
+}
+.Wishcard {
+  width: 95%;
+  height: 150px;
+  border: 1px solid #b6b5b5;
+  margin: auto;
+}
+
+.wishdiv {
+  max-width: 100px;
+  height: 80px;
+  margin-left: 20px;
+  object-fit: cover;
+}
+
+.wishimg {
+  width: 150px;
+  height: 120px;
+  background-size: cover;
+}
+
+.Wishcard1 {
+  display: flex;
+  flex-direction: row;
+}
+.Wishtext {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+}
+
+.wishtext2 {
+  margin-top: 0px;
+  color: rgb(0, 0, 0);
+}
+
+.wishtext1 {
+  color: rgb(0, 0, 0);
+}
+
+.wishtext3 {
+  margin-left: 80px;
+  color: red;
+  font-weight: bold;
+  margin-bottom: 50px;
+}
+.WishTEXT {
+  display: flex;
+  flex-direction: row;
+}
+.wishrembut {
+  width: 70px;
+  margin-left: 85px;
+  margin-top: -30px;
+  cursor: pointer;
+}
+
+.wishcardwi {
+  margin-left: 80px;
+}
+
+.car-titlele {
+  margin-top: -10px;
+}
+
+.car-infole {
+  margin-top: -2px;
+}
+
+.car-pricele {
+  margin-top: -2px;
+}

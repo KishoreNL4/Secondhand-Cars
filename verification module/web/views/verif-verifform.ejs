@@ -1,0 +1,471 @@
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="theme-color" content="#002f34" />
+    <title>Cars Valley - Secondhand Cars</title>
+    <link href="../public/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../public//css/style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../public/css/bootstrap-icons.css" />
+    <link rel="stylesheet" href="../public/sweetalert2/sweetalert2.min.css" />
+
+    <script>
+      function validate() {
+        var Frm = document.PasuMarketForm;
+
+        if (Frm.txtOwnername.value == "") {
+          Swal.fire({
+            text: "Please enter all the details",
+            didClose: () => {
+              Frm.txtOwnername.focus();
+            },
+          });
+
+          return false;
+        }
+
+        if (Frm.txtMobile.value == "") {
+          Swal.fire({
+            text: "Please enter all the details",
+            didClose: () => {
+              Frm.txtMobile.focus();
+            },
+          });
+
+          return false;
+        }
+
+        if (Frm.txtBrand.value == "") {
+          Swal.fire({
+            text: "Please enter all the details",
+            didClose: () => {
+              Frm.txtBrand.focus();
+            },
+          });
+
+          return false;
+        }
+
+        if (Frm.txtModel.value == "") {
+          Swal.fire({
+            text: "Please enter all the details",
+            didClose: () => {
+              Frm.txtModel.focus();
+            },
+          });
+
+          return false;
+        }
+
+        if (Frm.txtregistration.value == "") {
+          Swal.fire({
+            text: "Please enter all the details",
+            didClose: () => {
+              Frm.txtregistration.focus();
+            },
+          });
+
+          return false;
+        }
+
+        if (Frm.txtRegistrationvalidity.value == "") {
+          Swal.fire({
+            text: "Please enter all the details",
+            didClose: () => {
+              Frm.txtRegistrationvalidity.focus();
+            },
+          });
+
+          return false;
+        }
+
+          if (Frm.txtColour.value == "") {
+          Swal.fire({
+            text: "Please enter all the details",
+            didClose: () => {
+              Frm.txtColour.focus();
+            },
+          });
+
+          return false;
+        }
+
+           if (Frm.txtChassis.value == "") {
+          Swal.fire({
+            text: "Please enter all the details",
+            didClose: () => {
+              Frm.txtChassis.focus();
+            },
+          });
+
+          return false;
+        }
+
+          if (Frm.txtEngine.value == "") {
+          Swal.fire({
+            text: "Please enter all the details",
+            didClose: () => {
+              Frm.txtEngine.focus();
+            },
+          });
+
+          return false;
+        }
+
+
+         if (Frm.txtAccident.value == "") {
+          Swal.fire({
+            text: "Please enter all the details",
+            didClose: () => {
+              Frm.txtAccident.focus();
+            },
+          });
+
+          return false;
+        }
+
+
+
+
+
+        }
+
+      
+        
+
+   
+
+
+        ActivateSpinner();
+      
+
+      function viewFile(FileName, FileHash) {
+        document.getElementById("FileViewModelBody").innerHTML =
+          "<iframe id='iframe_FileView' src='' frameborder='0' height='400px' width='100%'></iframe>";
+        document.getElementById("iframe_FileView").src =
+          "./verifViewFile?FileName=" + FileName + "&FileHash=" + FileHash;
+        $("#FileViewModel").modal("show");
+      }
+
+      function ActivateSpinner() {
+        $("#SpinnerModal").modal({
+          keyboard: false,
+          backdrop: "static",
+          show: true,
+        });
+      }
+    </script>
+  </head>
+
+  <body class="d-flex flex-column bodyh100 bglight">
+    <header>
+      <nav class="navbar navbar-expand-md navbar-light fixed-top custom-navbar">
+        <div class="container"><% include verif-header %></div>
+      </nav>
+    </header>
+
+    <main role="main" class="flex-shrink-0">
+      <form
+        novalidate
+        name="PasuMarketForm"
+        method="post"
+        action="/verif-verifform"
+        onsubmit="return validate()"
+      >
+        <div class="container header-container">
+          <div class="row justify-content-center msearch-row">
+            <div class="col-md-6 col-lg-6">
+              <div class="card signin-card margintop20">
+                <div class="card-header signin-card-header">
+                  Car Description
+                </div>
+                <div class="card-body signin-card-body">
+                  <table class="table table-sm table-bordered">
+                    <tbody>
+                      <tr>
+                        <td width="40%" class="veriflist-table-td-l">
+                          Owner Name <i class="bi bi-star-fill starmark"></i>
+                        </td>
+                        <td width="50%" class="veriflist-table-td-r">
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="txtOwnername"
+                            Name="txtOwnername"
+                            value=""
+                          />
+                        </td>
+                      </tr>
+                      <tr>
+                        <td width="40%" class="veriflist-table-td-l">
+                          Mobile Number <i class="bi bi-star-fill starmark"></i>
+                        </td>
+                        <td width="50%" class="veriflist-table-td-r">
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="txtMobile"
+                            Name="txtMobile"
+                            value=""
+                          />
+                        </td>
+                      </tr>
+                      <tr>
+                        <td width="40%" class="veriflist-table-td-l">
+                          Brand <i class="bi bi-star-fill starmark"></i>
+                        </td>
+                        <td width="50%" class="veriflist-table-td-r">
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="txtBrand"
+                            Name="txtBrand"
+                            value=""
+                          />
+                        </td>
+                      </tr>
+                      <tr>
+                        <td width="40%" class="veriflist-table-td-l">
+                          Model <i class="bi bi-star-fill starmark"></i>
+                        </td>
+                        <td width="50%" class="veriflist-table-td-r">
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="txtModel"
+                            Name="txtModel"
+                            value=""
+                          />
+                        </td>
+                      </tr>
+                      <tr>
+                        <td width="40%" class="veriflist-table-td-l">
+                          Registration Number<i
+                            class="bi bi-star-fill starmark"
+                          ></i>
+                        </td>
+                        <td width="50%" class="veriflist-table-td-r">
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="txtregistration"
+                            Name="txtregistration"
+                            value=""
+                          />
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td width="40%" class="veriflist-table-td-l">
+                          Registration Validity<i
+                            class="bi bi-star-fill starmark"
+                          ></i>
+                        </td>
+                        <td width="50%" class="veriflist-table-td-r">
+                          <input
+                            type="date"
+                            class="form-control"
+                            id="txtRegistrationvalidity"
+                            Name="txtRegistrationvalidity"
+                            value=""
+                          />
+                        </td>
+                      </tr>
+                      <!-- <tr>
+                        <td width="40%" class="veriflist-table-td-l">
+                          Gender<i class="bi bi-star-fill starmark"></i>
+                        </td>
+                        <td width="50%" class="veriflist-table-td-r">
+                          <select
+                            class="form-control"
+                            id="lstSex"
+                            name="lstSex"
+                          >
+                            <option value="" selected>Select</option>
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                          </select>
+                        </td>
+                      </tr> -->
+                      <tr>
+                        <td width="40%" class="veriflist-table-td-l">
+                          Colour
+                          <i class="bi bi-star-fill starmark"></i>
+                        </td>
+                        <td width="50%" class="veriflist-table-td-r">
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="txtColour"
+                            Name="txtColour"
+                            value=""
+                          />
+                        </td>
+                      </tr>
+                      <tr>
+                        <td width="40%" class="veriflist-table-td-l">
+                          Chassis Number
+                          <i class="bi bi-star-fill starmark"></i>
+                        </td>
+                        <td width="50%" class="veriflist-table-td-r">
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="txtChassis"
+                            Name="txtChassis"
+                            value=""
+                          />
+                        </td>
+                      </tr>
+
+					   <td width="40%" class="veriflist-table-td-l">
+                          Engine Number
+                          <i class="bi bi-star-fill starmark"></i>
+                        </td>
+                        <td width="50%" class="veriflist-table-td-r">
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="txtEngine"
+                            Name="txtEngine"
+                            value=""
+                          />
+                        </td>
+                      </tr>
+
+                      <!-- <tr>
+                        <td width="40%" class="veriflist-table-td-l">
+                          Accident Vechile
+                          <i class="bi bi-star-fill starmark"></i>
+                        </td>
+                        <td width="50%" class="veriflist-table-td-r">
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="txtAccident"
+                            Name="txtAccident"
+                            value=""
+                          />
+                        </td>
+                      </tr> -->
+
+                      <tr>
+                        <td width="40%" class="veriflist-table-td-l">
+                          Accident Vehicle
+                          <i class="bi bi-star-fill starmark"></i>
+                        </td>
+                        <td width="50%" class="veriflist-table-td-r">
+                          <select
+                            class="form-control"
+                            id="txtAccident"
+                            name="txtAccident"
+                          >
+                            <option value="Yes">Yes</option>
+                            <option value="No">No</option>
+                          </select>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+
+              <div class="textAlignCenter margintop20">
+                <input type="hidden" name="hdnPostID" value="<%= data._id %>" />
+
+                <button type="submit" class="btn pm-btn btn-width-80p">
+                  Submit
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </form>
+    </main>
+
+    <!-- FileView Modal Starts here -->
+
+    <div
+      class="modal fade"
+      id="FileViewModel"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="row justify-content-center">
+        <div class="col-lg-6 col-md-6 text-center">
+          <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-body" id="FileViewModelBody"></div>
+              <div class="modal-footer model-add-footer">
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  data-dismiss="modal"
+                >
+                  Close
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- FileView Modal Ends here -->
+
+    <!-- Spinner Modal Starts here -->
+
+    <div
+      class="modal fade"
+      id="SpinnerModal"
+      tabindex="-1"
+      aria-labelledby="SpinnerModal"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="pm-card-01-header">
+              We are writing verification information into Blockchain.
+            </div>
+            <div class="pm-card-01-header margintop15">Please Wait ....</div>
+            <div class="uploadspinner">
+              <div
+                class="spinner-border text-success"
+                style="width: 3rem; height: 3rem"
+                role="status"
+              >
+                <span class="sr-only">Loading...</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Spinner Modal Ends here -->
+
+    <footer class="footer mt-auto myfooter"><% include footer %></footer>
+
+    <script src="../public/js/jquery-3.5.1.slim.min.js"></script>
+    <script src="../public/js/popper.min.js"></script>
+    <script src="../public/js/bootstrap.min.js"></script>
+    <script src="../public/sweetalert2/sweetalert2.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,90 @@
+.sellcaritem {
+  display: flex;
+  flex-direction: row;
+  margin-left: 70px;
+}
+
+.sellCarItem1 {
+  flex: 1;
+  margin: 0;
+  padding: 20px 0;
+  border: none;
+  font: 14px Poppins, sans-serif;
+  vertical-align: baseline;
+  box-sizing: border-box;
+}
+
+.sellCarItem1 h2 {
+  font-size: 30px;
+  line-height: 36px;
+  margin-bottom: 28px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  color: rgb(0, 36, 65);
+}
+
+.sellCarItem1 p {
+  margin-bottom: 0;
+  font-size: 20px;
+  padding: 0px 0px 42px;
+  color: rgb(70, 81, 102);
+}
+
+.sellCarButton {
+  color: #4e4e4e;
+  font-weight: 600;
+  background-color: #ffbf00;
+  font-size: 14px;
+  letter-spacing: 0.14px;
+  position: relative;
+  height: 48px;
+  padding: 0 12px;
+  border-radius: 12px;
+  text-align: center;
+  display: block;
+  width: 40%;
+  text-transform: uppercase;
+  border: none;
+  outline: none;
+  font-family: "Poppins";
+  cursor: pointer;
+  white-space: nowrap;
+  vertical-align: middle;
+  user-select: none;
+  line-height: 21px;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  appearance: button;
+  overflow: visible;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.sellCarItem2 {
+  flex: 1;
+  margin: 0;
+  padding: 0;
+  border: none;
+  font: 14px Poppins, sans-serif;
+  vertical-align: baseline;
+  box-sizing: border-box;
+}
+
+.sellCarImage {
+  vertical-align: middle;
+  border-style: none;
+  box-sizing: border-box;
+  height: 300px;
+}
+
+@media (max-width: 768px) {
+  .sellCarItem2 img {
+    display: none;
+  }
+  .sellCarItem1 h2 {
+    width: 400px;
+  }
+  .sellcaritem {
+    margin-left: 50px;
+  }
+}

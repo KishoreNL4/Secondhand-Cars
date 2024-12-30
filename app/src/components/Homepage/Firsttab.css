@@ -1,0 +1,254 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
+
+.Backgroundcarimage {
+  background-image: url("./car.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 500px;
+  /* opacity: 0.7; */
+  background-color: rgba(0, 0, 0, 0.7);
+  position: relative;
+  font-family: "Roboto", sans-serif;
+}
+
+.imContainer {
+  position: absolute;
+  top: 80%;
+  left: 5%;
+  transform: translate(-50%, -50%);
+  /* text-align: center; */
+  /* margin-left: -300px; */
+}
+
+.rentText {
+  font-size: 36px;
+  color: #a40109;
+  /* background-color: aliceblue; */
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.exclusiveText {
+  font-size: 30px;
+  color: #3a3732;
+  font-weight: bold;
+  background-color: aliceblue;
+  word-spacing: 5px;
+}
+
+.search-inputt {
+  width: 50%;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  padding: 15px 45px 15px 15px;
+  background-color: #eaeaeb;
+  color: #6c6c6c;
+  border-radius: 6px;
+  border: none;
+  transition: all 0.4s;
+}
+
+.search-inputt:focus {
+  border: none;
+  outline: none;
+  box-shadow: 0 1px 12px #b8c6db;
+  -moz-box-shadow: 0 1px 12px #b8c6db;
+  -webkit-box-shadow: 0 1px 12px #b8c6db;
+}
+
+.search-btnn {
+  background-color: transparent;
+  font-size: 18px;
+  padding: 6px 9px;
+  margin-left: -45px;
+  border: none;
+  color: #140a13;
+  transition: all 0.4s;
+  z-index: 10;
+}
+
+.search-btnn:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+  color: black;
+}
+
+.search-btnn:focus {
+  outline: none;
+  color: black;
+}
+
+.fircon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: -500px;
+  margin-left: -50px;
+  margin-right: auto;
+  font-size: 20px;
+  word-spacing: 20px;
+  color: #a40109;
+  font-weight: bold;
+}
+
+.verified-cars-text {
+  font-family: "Roboto", sans-serif;
+  font-size: 36px;
+  line-height: 46px;
+  vertical-align: baseline;
+  letter-spacing: normal;
+  word-spacing: Opx;
+  /* margin: auto; */
+  padding: Opx;
+  font-weight: 700;
+  font-style: normal;
+  font-variant: normal;
+  text-transform: none;
+  text-decoration: none solid rgb(255, 255, 255);
+  /* text-align: left; */
+  text-indent: Opx;
+  color: #ffffff;
+}
+.verified-cars-cont {
+  display: flex;
+  align-items: flex-start;
+  justify-content: start;
+  max-width: 90%;
+  margin: auto;
+  padding-top: 100px;
+}
+
+.search-box-container {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  margin: auto;
+  max-width: 90%;
+  padding-top: 30px;
+}
+.verified-cars-text2 {
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  line-height: 46px;
+  vertical-align: baseline;
+  letter-spacing: normal;
+  word-spacing: Opx;
+  padding: Opx;
+  font-weight: normal;
+  font-style: normal;
+  font-variant: normal;
+  text-transform: none;
+  text-decoration: none solid rgb(255, 255, 255);
+  /* text-align: left; */
+  text-indent: Opx;
+  color: #ffffff;
+}
+.verified-cars-cont2 {
+  display: flex;
+  align-items: flex-start;
+  justify-content: start;
+  max-width: 90%;
+  margin: auto;
+  margin-top: -50px;
+}
+
+.benefits {
+  position: relative;
+  left: 50px;
+  top: 60px;
+}
+.toppicks {
+  position: relative;
+  top: 60px;
+}
+
+.headlinee {
+  position: relative;
+  bottom: 25px;
+  font-size: 30px;
+}
+
+.suggestions-list {
+  list-style: none;
+  padding: 0;
+  margin-top: -40px;
+  width: 100%;
+  max-height: 200px;
+  overflow-y: auto;
+  background-color: #fff;
+  border: 1px solid rgb(221, 229, 235);
+  border-radius: 12px;
+  box-shadow: rgba(126, 133, 148, 0.08) 0px 24px 48px 0px;
+  position: absolute;
+  top: 100px; /* You can adjust this value to set the desired distance from the top */
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+  cursor: pointer;
+}
+
+.suggestions-list li {
+  padding: 8px 16px;
+  cursor: pointer;
+}
+
+.selected {
+  background-color: #f0f0f0; /* You can adjust this color as needed */
+}
+@media (max-width: 768px) {
+  .Backgroundcarimage {
+    background-image: url("./car.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 350px;
+    /* opacity: 0.7; */
+    background-color: rgba(0, 0, 0, 0.7);
+    position: relative;
+    font-family: "Roboto", sans-serif;
+  }
+
+  .brandlogo {
+    display: none;
+  }
+
+  .verified-cars-cont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .verified-cars-text {
+    font-size: 27px;
+    margin-top: -20px;
+  }
+
+  .verified-cars-cont2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .verified-cars-text2 {
+    /* margin-left: 1px; */
+    text-align: center;
+    margin-top: 30px;
+    font-size: 20px;
+    line-height: 35px;
+  }
+
+  .search-box-container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .viewcars {
+    display: none;
+    /* margin-left: 100px;
+    width: 800px; */
+  }
+}

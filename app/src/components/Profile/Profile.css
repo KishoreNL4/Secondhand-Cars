@@ -1,0 +1,404 @@
+.patternimage {
+  background-color: #f9f9fa;
+  background-image: url("./car\ pattern.jpg");
+  /* opacity: 0.5; */
+
+  height: 660px;
+}
+
+.Profilediv1 {
+  width: 650px;
+  height: 400px;
+
+  display: flex;
+  margin: auto;
+  margin-top: 100px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  border-radius: 20px;
+  z-index: 10px;
+}
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+.nameholder {
+  font-family: "Roboto", sans-serif;
+  line-height: 25.2px;
+  vertical-align: baseline;
+  letter-spacing: normal;
+  word-spacing: 0px;
+  margin: 0px;
+  padding: 0px 12px 0px 0px;
+
+  /* Decoration / Transformation */
+  font-weight: 500;
+  font-style: normal;
+  font-variant: normal;
+  font-kerning: auto;
+  font-optical-sizing: auto;
+  font-stretch: 100%;
+  font-variation-settings: normal;
+  font-feature-settings: normal;
+  text-transform: none;
+  text-decoration: none solid rgb(33, 33, 33);
+  text-align: start;
+  text-indent: 0px;
+}
+
+.nameholdername {
+  font-family: "Roboto", sans-serif;
+  line-height: 25.2px;
+  vertical-align: baseline;
+  letter-spacing: normal;
+  word-spacing: 0px;
+  margin: 0px;
+  padding: 0px 12px 0px 0px;
+
+  /* Decoration / Transformation */
+  font-weight: 500;
+  font-style: normal;
+  font-variant: normal;
+  font-kerning: auto;
+  font-optical-sizing: auto;
+  font-stretch: 100%;
+  font-variation-settings: normal;
+  font-feature-settings: normal;
+  text-transform: none;
+  text-decoration: none solid rgb(33, 33, 33);
+  text-align: start;
+  text-indent: 0px;
+}
+
+.nameholderinfo {
+  font-family: "Roboto", sans-serif;
+  line-height: 25.2px;
+  vertical-align: baseline;
+  letter-spacing: normal;
+  word-spacing: 0px;
+  margin: 0px;
+  padding: 0px 12px 0px 0px;
+
+  /* Decoration / Transformation */
+  font-weight: 500;
+  font-style: normal;
+  font-variant: normal;
+  font-kerning: auto;
+  font-optical-sizing: auto;
+  font-stretch: 100%;
+  font-variation-settings: normal;
+  font-feature-settings: normal;
+  text-transform: none;
+  text-decoration: none solid rgb(33, 33, 33);
+  text-align: start;
+  text-indent: 0px;
+}
+
+.nameholdermob {
+  font-family: "Roboto", sans-serif;
+  line-height: 25.2px;
+  vertical-align: baseline;
+  letter-spacing: normal;
+  word-spacing: 0px;
+  margin: 0px;
+  padding: 0px 12px 0px 0px;
+
+  /* Decoration / Transformation */
+  font-weight: 500;
+  font-style: normal;
+  font-variant: normal;
+  font-kerning: auto;
+  font-optical-sizing: auto;
+  font-stretch: 100%;
+  font-variation-settings: normal;
+  font-feature-settings: normal;
+  text-transform: none;
+  text-decoration: none solid rgb(33, 33, 33);
+  text-align: start;
+  text-indent: 0px;
+}
+
+.LeftSection {
+  flex-basis: 35%;
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(#63a3f2),
+    to(#0e008c)
+  );
+  background: linear-gradient(to right, #63a3f2, #0e008c);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.RightSection {
+  flex-basis: 65%;
+  background-color: white;
+}
+
+.CenterContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.imgcontent {
+  border-radius: 50%;
+  width: 100px;
+  display: none;
+}
+
+/* label {
+  cursor: pointer;
+} */
+
+.previewImage {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-top: 10px;
+  object-fit: cover;
+}
+
+.profile-img {
+  text-align: center;
+  margin-top: -50px;
+}
+.profile-img img {
+  width: 130px;
+  height: 100px;
+}
+.profile-img .file {
+  position: relative;
+  overflow: hidden;
+  margin-top: -20%;
+  width: 70%;
+  border: none;
+  border-radius: 0;
+  font-size: 15px;
+  background: #212529b8;
+}
+.profile-img .file input {
+  position: absolute;
+  opacity: 0;
+  right: 0;
+  top: 0;
+}
+.profile-name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  line-height: 19.6px;
+  vertical-align: baseline;
+  letter-spacing: normal;
+  word-spacing: 0px;
+  margin: 0px;
+  padding: 4px 5px 0px 0px;
+
+  /* Decoration / Transformation */
+  font-weight: 400;
+  font-style: normal;
+  font-variant: normal;
+  font-kerning: auto;
+  font-optical-sizing: auto;
+  font-stretch: 100%;
+  font-variation-settings: normal;
+  font-feature-settings: normal;
+  text-transform: none;
+  text-decoration: none solid rgb(40, 116, 240);
+  text-align: start;
+  text-indent: 0px;
+}
+
+.profile-role {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 20px;
+}
+.edit-iicon {
+  color: white;
+  margin-bottom: -20px;
+  cursor: pointer;
+}
+
+.closeicon {
+  /* margin-top: 160px; */
+  /* margin-right: 150px; */
+  margin-left: 400px;
+  font-size: 25px;
+  cursor: pointer;
+}
+.edit-bbutton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5%;
+  /* margin-left: 20px; */
+}
+.profile-f1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  margin-top: -20px;
+}
+
+.line {
+  width: 90%;
+  border: none;
+  border-top: 1px solid #393939;
+  margin-top: 10px;
+}
+
+.info-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 20px;
+}
+
+.info-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mobile-input {
+  width: 150px;
+  height: 30px;
+  padding: 5px;
+  /* border: 1px solid #ccc; */
+  border-radius: 4px;
+  margin-top: 10px;
+  /* margin-left: 10px; */
+  margin-right: 20px;
+  color: black;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+}
+
+.email-input {
+  width: 150px;
+  height: 30px;
+  padding: 5px;
+
+  /* border: 1px solid #ccc; */
+  border-radius: 4px;
+  margin-top: 10px;
+  margin-left: 40px;
+  color: black;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+}
+
+.logoutt-button-container {
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logoutt-button {
+  background-color: #ff3c3c;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.logoutt-button:hover {
+  background-color: #e62e2e;
+}
+
+@media (max-width: 768px) {
+  .Profilediv1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* width: 300px; */
+    margin: 0 auto;
+    margin-top: 60px;
+    box-shadow: none;
+  }
+
+  .name-field {
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .info-container {
+    text-align: left;
+    margin-top: 20px; /* Adjust as needed */
+  }
+
+  .info-item {
+    margin-bottom: 15px;
+  }
+
+  .nameholder {
+    margin-left: 100px;
+  }
+
+  .nameholdermob {
+    margin-left: 50px;
+  }
+
+  .email-input {
+    width: 100%;
+    /* padding: 5px; */
+
+    border-radius: 5px;
+    margin: auto;
+    margin-left: 150px;
+    margin-top: -25px;
+  }
+
+  .mobile-input {
+    width: 100%;
+    padding: 5px;
+    /* border: 1px solid #ccc; */
+    border-radius: 5px;
+    margin: auto;
+    margin-left: 150px;
+    margin-top: -25px;
+  }
+
+  .logoutt-button-container {
+    text-align: center;
+    margin-top: auto; /* Push the logout button to the bottom */
+  }
+  .profile-img {
+    display: none;
+  }
+  .LeftSection {
+    flex-basis: 35%;
+    background: none;
+    /* background: linear-gradient(to right, #63a3f2, #0e008c); */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .info-container {
+    flex-direction: column;
+  }
+  .edit-bbutton {
+    display: none;
+  }
+  .name-field {
+    display: none;
+  }
+  .RightSection {
+    margin-left: -170px;
+    width: 400px;
+  }
+  .closeicon {
+    margin-left: 370px;
+  }
+}
